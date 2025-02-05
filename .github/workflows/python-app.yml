@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install notebook pandas numpy scikit-learn jupyter nbconvert
+          pip install notebook pandas numpy scikit-learn jupyter nbconvert matplotlib seaborn
 
       - name: Run Jupyter Notebook
         run: |
