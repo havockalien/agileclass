@@ -420,7 +420,7 @@
    "source": [
     "x = df.drop('LUNG_CANCER', axis=1)\n",
     "y = df['LUNG_CANCER']\n",
-    "x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.1, random_state=42)\n",
+    "x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)\n",
     "model = GaussianNB()\n",
     "model.fit(x_train, y_train)\n",
     "y_pred = model.predict(x_test)\n",
